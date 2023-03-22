@@ -19,7 +19,7 @@ interface DishFormProps {
   resetForm: () => void;
 }
 
-const DishForm: React.FC<DishFormProps & InjectedFormProps<{}, DishFormProps>> = ({
+const DishForm: React.FC<DishFormProps & InjectedFormProps<Record<string, never>, DishFormProps>> = ({
   handleSubmit,
   submitForm,
   resetForm,
@@ -72,7 +72,7 @@ const DishForm: React.FC<DishFormProps & InjectedFormProps<{}, DishFormProps>> =
 };
 
 export default connect(null, { submitForm, resetForm: () => reset("dishForm") })(
-  reduxForm<{}, DishFormProps>({
+  reduxForm<Record<string, never>, DishFormProps>({
     form: "dishForm",
   })(DishForm)
 );

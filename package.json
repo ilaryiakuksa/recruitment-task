@@ -45,9 +45,6 @@
     "*.js": "npm run lint",
     "*.{js,css,md,html,json}": "npm run format"
   },
-  {
-    "homepage": "https://ilaryiakuksa.github.io/recruitment-task"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -70,5 +67,6 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "prettier": "2.8.6"
-  }
+  },
+  "homepage": "https://ilaryiakuksa.github.io/recruitment-task"
 }
